@@ -1,0 +1,13 @@
+.search-filter-field{
+  margin: 1% 0% 0% 0%;
+  width: 94%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.main-container{
+  height: 100vh;
+  margin: 2% 10%;
+  background-color: rgba(0, 139, 139, 0.158);
+  border-radius: 3rem;
+  padding: 1%;
+}
