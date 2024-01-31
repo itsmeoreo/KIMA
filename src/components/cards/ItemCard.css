@@ -1,16 +1,52 @@
 .css-item-card{
-  margin: 5% 10% 5% 10%;
-  width: 80%;
+  margin: 1% 5% 1% 5%;
+  width: 90%;
   height: fit-content;
-  background-color: #000;
+  background-color: darkcyan;
   border-radius: 2rem;
   color: white;
   font-size: 1.5rem;
   display: inline-block;
 }
 .css-itemname-type{
+  float: left;
+  margin-left: 2%;
   display: flex;
 }
 .css-itemcard-content{
+  height: 17vh;
   display: inline-block;
+}
+.css-itemquantity-manage{
+  float: right;
+  justify-content: end;
+  display: flex;
+}
+.css-itemcard-itemname, .css-itemcard-itemtype{
+  width: 100%;
+  margin: 1.3rem 3% 0% 3%;
+}
+.css-itemcard-itemtype{
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  font-size: medium;
+}
+.css-itemcard-itemquantity{
+  padding: 10% 10% 0% 0%;
+}
+.css-itemcard-itemmanage{
+  margin: 3%;
+  border: 0;
+  border-radius: 2rem;
+  width: 9rem;
+  font-size: xx-large;
+  background-color: rgb(0, 100, 100);
+  color: white;
+  transition: 200ms;
+}
+
+.css-itemcard-itemmanage:hover{
+  cursor: pointer;
+  background-color: cyan;
+  color: darkcyan;
 }

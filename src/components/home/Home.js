@@ -4,6 +4,10 @@ import FilterField from '../filterField/FilterField.js'
 import ButtonAppBar from '../navbar/Navbar.js'
 import SearchField from '../searchField/SearchField.js'
 import './Home.css'
+import {Data} from '../../services/data.js'
+
+const data= Object.values(Data).flat();
+console.log(data);
 
 function Home() {
   return (
@@ -14,7 +18,11 @@ function Home() {
         <FilterField />
       </div>
       <div className='main-container' >
-          <ItemCard ></ItemCard>
+        {
+          data.map((essentials)=>(
+            <ItemCard key={essentials.id} data={essentials} />
+          ))
+        }
       </div>
     </div>
   )

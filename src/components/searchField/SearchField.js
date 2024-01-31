@@ -19,8 +19,8 @@ export default function SearchField() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
-        <SearchIcon className='css-search-icon' sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-        <TextField id="input-with-sx" label="Search" variant='standard' color='darkcyan' />
+        <SearchIcon className='css-search-icon' sx={{ mr: 1, my: 0.5 }} />
+        <TextField className='css-search-field' id="input-with-sx" label="Search" variant='standard' color='darkcyan' />
       </Box>
     </ThemeProvider>
   );
